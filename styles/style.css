@@ -1,0 +1,100 @@
+:root {
+  --nav-link-color: lightgrey;
+  --nav-link-color-hover: white;
+  --color-primary: #4B3832;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  background: var(--color-primary);
+}
+
+.header .logo {
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--nav-link-color);
+}
+
+.header .logo:hover {
+  color: var(--nav-link-color-hover);
+}
+
+.header .nav {
+  display: none;
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+.lightbox {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.lightbox[active='true'] {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.lightbox-image {
+  max-width: 80%;
+  height: auto;
+  max-height: 60%;
+  width: auto;
+}
+
+.lightbox-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.lightbox-buttons-wrapper button {
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  background: white;
+}
+
+@media (min-width: 568px) {
+  .lightbox-buttons-wrapper {
+    flex-direction: row;
+  }
+
+  .lightbox-buttons-wrapper button {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lightbox-image {
+    max-height: 80%;
+  }
+}
