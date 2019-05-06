@@ -56,7 +56,7 @@ const Sources = [
 ];
 
 const renderSources = () => {
-  const ElementBody = document.querySelector('body');
+  const ElementBody = document.querySelector('.container');
   const ElementSources = document.createElement('ol');
   ElementSources.classList = ['sources'];
   Sources.forEach((source, index) => {
@@ -64,7 +64,6 @@ const renderSources = () => {
     ElementSource.id = `przypis_${index + 1}`;
     const ElementIndex = document.createElement('span');
     ElementIndex.classList = ['index'];
-    ElementIndex.textContent = `${index + 1}. `;
     ElementSource.textContent = source;
     ElementSource.prepend(ElementIndex);
     ElementSources.append(ElementSource);

@@ -1,0 +1,15 @@
+.sources {
+  counter-reset: item; 
+}
+
+.sources li {
+  counter-increment: item;
+  list-style-type: none;
+}
+
+.sources li:before {
+  content: counter(item)'.';
+  display: inline;
+  font-weight: 600;
+  padding-right: .5em;
+}
