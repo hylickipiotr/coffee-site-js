@@ -41,9 +41,9 @@ const renderNavigation = () => {
   ElemenetNavigation.classList = ['nav'];
   Header.NavItmes.forEach(({ fileName, name }) => {
     const elementNavItem = document.createElement('li');
-    elementNavItem.classList = ['nav-link'];
     const elementNavAnchor = document.createElement('a');
     elementNavAnchor.setAttribute('href', `${fileName}.html`);
+    elementNavAnchor.classList = ['nav-link'];
     elementNavAnchor.textContent = name;
     elementNavItem.appendChild(elementNavAnchor);
     ElemenetNavigation.appendChild(elementNavItem);
@@ -67,3 +67,5 @@ const renderHeader = () => {
 renderHeader();
 
 //TODO Responsive menu
+
+//TODO Added 'active' class to nav-link when active site

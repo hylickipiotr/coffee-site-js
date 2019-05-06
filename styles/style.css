@@ -1,11 +1,7 @@
 @import './colors.css';
+@import './global.css';
 @import './lightbox.css';
 @import './header.css';
-
-body {
-  padding: 0;
-  margin: 0;
-}
 
 .container {
   width: 100%;

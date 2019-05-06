@@ -1,5 +1,8 @@
+@import './navigation.css';
+
 .header {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   padding: 30px;
   background: var(--color-primary);
@@ -9,14 +12,5 @@
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
-  color: var(--nav-link-color);
-}
-
-.header .logo:hover {
-  color: var(--nav-link-color);
-  opacity: 0.8;
-}
-
-.header .nav {
-  display: none;
+  color: var(--color-nav-link);
 }
