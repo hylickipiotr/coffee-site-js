@@ -3,49 +3,49 @@
   margin: 50px auto;
 }
 
-h1 {
+.container h1 {
   margin: 1.4em 0;
   font-size: 2.2em;
   font-weight: 600;
 }
 
-h2 {
+.container h2 {
   margin: 1.2em 0;
   font-size: 1.8em;
   font-weight: 600;
 }
 
-h3 {
+.container h3 {
   margin: 1em 0;
   font-size: 1.6em;
   font-weight: 600;
 }
 
-p {
+.container p {
   font-size: 1.3em;
   font-weight: 400;
   line-height: 1.9em;
 }
 
-li {
+.container li {
   font-size: 1.3em;
   font-weight: 400;
   line-height: 1.9em;
   margin-bottom: 15px;
 }
 
-li:last-of-type {
+.container li:last-of-type {
   margin-bottom: 0;
 }
 
-img {
+.container img {
   width: 100%;
   height: auto;
   filter: grayscale(0.5);
   transition: filter .3s ease-in;
 }
 
-img:hover {
+.container img:hover {
   filter: grayscale(0);
 }
 

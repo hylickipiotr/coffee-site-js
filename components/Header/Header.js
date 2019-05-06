@@ -37,7 +37,7 @@ const Header = {
 };
 
 const renderNavigation = () => {
-  const ElemenetNavigation = document.createElement('div');
+  const ElemenetNavigation = document.createElement('ul');
   ElemenetNavigation.classList = ['nav'];
   Header.NavItmes.forEach(({ fileName, name }) => {
     const elementNavItem = document.createElement('li');
