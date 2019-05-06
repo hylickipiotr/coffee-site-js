@@ -2,14 +2,5 @@
 @import './global.css';
 @import './lightbox.css';
 @import './header.css';
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-img {
-  width: 400px;
-  height: auto;
-}
+@import './content.css';
 
