@@ -81,10 +81,12 @@ const renderBackNavigationButton = () => {
   const hashtag = window.location.hash;
   const ElementActiveSource = document.querySelector(hashtag);
   const ElementButtonPrevious = document.createElement('button');
+  ElementButtonPrevious.classList = ['button-previous-article'];
   ElementButtonPrevious.onclick = () => {history.back()};
   ElementButtonPrevious.textContent = "Wróć do artykułu";
   ElementActiveSource.append(ElementButtonPrevious);
 }
 
 renderSources();
+highlightHashtagSource();
 renderBackNavigationButton();
