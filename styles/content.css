@@ -4,7 +4,7 @@
 }
 
 .container h1 {
-  margin: 2em 0 .4em 0;
+  margin: 1.6em 0 .4em 0;
   font-size: 2.2em;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@
   width: 100%;
   height: auto;
   filter: grayscale(0.5);
-  transition: filter .3s ease-in;
+  transition: filter .2s ease-in;
   cursor: pointer;
 }
 
@@ -53,5 +53,11 @@
 
 .source {
   color: var(--color-primary);
+  opacity: 0.5;
   text-decoration: none;
+  transition: opacity 0.1s ease-in;
+}
+
+.source:hover {
+  opacity: 1;
 }
