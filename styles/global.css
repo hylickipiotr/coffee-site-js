@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&subset=latin-ext');
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   min-height: 100vh;
 }
 
