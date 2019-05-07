@@ -12,6 +12,7 @@
   transform: translateY(100%);
   opacity: 0;
   transition: opacity 0.2s ease;
+  cursor: pointer;
 }
 
 .lightbox[active='true'] {
@@ -24,6 +25,7 @@
   height: auto;
   max-height: 60%;
   width: auto;
+  cursor: default;
 }
 
 .lightbox-buttons-wrapper {
@@ -38,6 +40,7 @@
   height: 30px;
   border: none;
   background: white;
+  cursor: pointer;
 }
 
 @media (min-width: 568px) {
