@@ -25,3 +25,11 @@ table tbody td {
 table tbody tr:last-of-type td {
   border-bottom: none;
 }
+
+table tbody tr {
+  transition: background .1s ease-in;
+}
+
+table tbody tr:hover {
+  background: rgba(0, 40, 100, 0.03);
+}
