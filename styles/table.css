@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  border: 1px solid rgba(0, 40, 100, 0.12);
+  border-radius: 4px;
+  margin-bottom: 1em;
+  font-weight: 400;
+  font-size: 0.8em;
+  border-spacing: 0;
+}
+
+table thead th {
+  padding: 1em 20px 1em 20px;
+  border-bottom: 1px solid rgba(0, 40, 100, 0.12);
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 40, 100, 0.5);
+}
+
+table tbody td {
+  padding: 1em 20px 1em 20px;
+  border-bottom: 1px solid rgba(0, 40, 100, 0.12);
+}
+
+table tbody tr:last-of-type td {
+  border-bottom: none;
+}
