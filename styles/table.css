@@ -33,3 +33,15 @@ table tbody tr {
 table tbody tr:hover {
   background: rgba(0, 40, 100, 0.03);
 }
+
+table .upper {
+  text-transform: uppercase;
+}
+
+table .primary {
+  background: rgba(0, 40, 100, 0.03);
+}
+
+table .bold {
+  font-weight: 600;
+}
